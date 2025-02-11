@@ -89,3 +89,65 @@ body {
   font-size: 1.6rem;
   font-style: normal;
 }
+/* ===================hero=================== */
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 76px;
+}
+.hero__content {
+  width: 44%;
+}
+.hero__media {
+  flex: 1;
+}
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67;
+}
+.hero__image {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.hero__img {
+  object-fit: cover;
+}
+.hero__img--large {
+  border-radius: 6px;
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
+}
+.hero__img--small {
+  width: 210px;
+  height: 410px;
+  border-radius: 0px 6px 6px 0px;
+}
