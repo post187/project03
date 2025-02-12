@@ -524,3 +524,28 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+/* ===================appointment================= */
+.appointment {
+  margin: 85px 0;
+  background: #f6fbff;
+}
+.appointment__inner {
+  padding: 100px 178px;
+  text-align: center;
+}
+.appointment__heading::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #2e80ce;
+  margin: 18px auto 0px;
+}
+.appointment__desc {
+  max-width: 617px;
+  margin: 18px auto 0;
+}
+.appointment__btn {
+  margin-top: 38px;
+}
