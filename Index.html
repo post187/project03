@@ -112,7 +112,7 @@
           />
           <!-- nav -->
           <nav class="navbar">
-            <ul class="navbar__list">
+            <ul class="navbar__list" id="navbar-list__pc">
               <li class="navbar__item">
                 <a href="#!" class="navbar__link navbar__link--active">Home</a>
               </li>
@@ -190,6 +190,45 @@
 
       <!-- overlay -->
       <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- menu-content -->
+      <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu-drawer__top">
+          <!-- logo -->
+          <img src="./assets/img/logo.svg" alt="Shine-Simle" class="logo" />
+          <!-- close menu -->
+          <label for="menu-checkbox">
+            <svg
+              class="close-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="currentColor"
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              />
+            </svg>
+          </label>
+        </div>
+        <!-- nav mobie  -->
+        <ul id="navbar-list__mobie"></ul>
+        <script>
+          const navPC = document.querySelector("#navbar-list__pc");
+          const navmobie = document.querySelector("#navbar-list__mobie");
+          //sao chep
+          navmobie.innerHTML = navPC.innerHTML;
+        </script>
+        <div class="separate"></div>
+
+        <div class="showonmobie">
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Log In</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Sign Up</a>
+          </li>
+        </div>
+      </div>
     </div>
 
     <main>
@@ -622,7 +661,7 @@
         <!-- top -->
         <div class="top__footer">
           <!-- column1 -->
-          <div class="footer__cloumn">
+          <div class="footer__cloumn footer__hidden">
             <a href="/.">
               <img src="./assets/img/logo.svg" alt="Shine-Simle" class="logo" />
             </a>

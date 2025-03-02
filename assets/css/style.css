@@ -16,7 +16,7 @@ body {
 }
 /* ==================common================= */
 .container {
-  width: 1170px;
+  width: 80%;
   max-width: calc(100%-48px);
   margin: 0 auto;
 }
